@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://deerings.github.io/portfolio/style.css"> <!-- Added quotation marks -->
+    <link rel="stylesheet" href="https://deerings.github.io/portfolio/style.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 </head>
 <body>
 <h1>Contact</h1>
-<p>If you'd like to connect, here is my <a href="https://blinq.me/XBhjnnumqQz3" target="_blank">digital business card</a>.</p> <!-- Corrected spelling of "business" -->
+
+<form action="mailto:sdeering@ucsd.edu" method="POST" enctype="text/plain">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject"><br><br>
+    
+    <label for="body">Message:</label>
+    <textarea id="body" name="body" rows="4" required></textarea><br><br>
+    
+    <button>Send</button>
+</form>
+
+<p>Also, here is my <a href="https://blinq.me/XBhjnnumqQz3" target="_blank">digital business card</a>.</p>
 <nav>
     <ul>
         <li><a href="https://deerings.github.io/portfolio/index.html">Home</a></li>
         <li><a href="https://deerings.github.io/portfolio/projects/index.html">Projects</a></li>
         <li><a href="https://deerings.github.io/portfolio/contact/index.html">Contact</a></li>
-        <li><a href="https://github.com/deerings" target="_blank">My Github</a></li> <!-- Removed the comma here -->
+        <li><a href="https://github.com/deerings" target="_blank">My Github</a></li>
     </ul>
 </nav> 
 </body>
 </html>
+
