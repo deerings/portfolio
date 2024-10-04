@@ -9,12 +9,12 @@
 <body>
 <h1>Contact</h1>
 
-<form id="contactForm">
+<form action="mailto:sdeering@ucsd.edu" method="POST" enctype="text/plain">
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required><br><br>
     
     <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject">
+    <input type="text" id="subject" name="subject" required><br><br>
     
     <label for="body">Body:</label>
     <textarea id="body" name="body" rows="4" required></textarea><br><br>
@@ -31,23 +31,5 @@
         <li><a href="https://github.com/deerings" target="_blank">My Github</a></li>
     </ul>
 </nav> 
-
-<script>
-    document.getElementById('contactForm').onsubmit = function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const body = document.getElementById('body').value;
-
-        // Construct the mailto link
-        const mailtoLink = `mailto:sdeering@ucsd.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${email}\n\n${body}`)}`;
-
-        // Open the default email client with the constructed link
-        window.location.href = mailtoLink;
-    };
-</script>
 </body>
 </html>
-
-
